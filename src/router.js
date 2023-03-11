@@ -1,11 +1,16 @@
 import {createRouter, createWebHistory} from 'vue-router'
+import App from './App'
 import CounterApp from './components/CounterApp.vue'
 import NotFound from '../src/components/NotFound.vue'
+
 
 const routes = [ 
     { 
         path:'/', 
-        redirect: '/counter'
+        name:'App',
+        component:App
+
+        // redirect: '/counter'
     }, 
     { 
         path:'/counter', 

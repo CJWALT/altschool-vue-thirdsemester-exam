@@ -14,7 +14,7 @@
       import useCounter from '@/composable/counter'
 
       export default{
-        /* eslint-disable */
+        
         name: 'CounterApp',
         
         

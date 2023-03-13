@@ -118,4 +118,12 @@
   transform:scale(1.1);
   font-weight:600;
 }
+
+@media screen and (max-width:720px){ 
+
+  .count-container{ 
+    padding:35px 15px;
+  }
+}
+
 </style>

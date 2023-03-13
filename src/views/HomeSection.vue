@@ -7,7 +7,9 @@
         <p class="welcome-text"> Checkout my counter app with VueJS that performs
                 increment, decrement, reset and set value functions.    
         </p>
-        <router-link to="/counter" class="counter-link">Go to app</router-link>
+        <router-link to="/counter" class="counter-link">Go to app
+             <ion-icon name="arrow-forward-outline" class="app-arrow"></ion-icon>
+             </router-link>
     </div>
 </div>
 <FooterSection/>
@@ -53,7 +55,15 @@ export default {
     font-weight:600;
     text-align:center;
 }
+.app-arrow{ 
+    align-self:center; 
+    font-size:1.3rem; 
+    font-weight:700;
+}
     a.counter-link{ 
+        display:flex; 
+        flex-direction:row; 
+        gap:6px;
         background:blue; 
         padding:10px 30px; 
         border-radius:10px;

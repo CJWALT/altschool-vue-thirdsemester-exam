@@ -14,17 +14,18 @@
           
             <button @click="setValue(value)" class="btn">Set value</button>
           </div>
-          
-        </div>
        </div>
-        
+    </div>
   </div>
+
+  <FooterSection/>
   
 </template> 
 
 
 <script>
       import HeaderSection from '../components/HeaderSection.vue'
+      import FooterSection from '../components/FooterSection.vue'
       import useCounter from '@/composable/counter'
 
       export default{
@@ -32,7 +33,8 @@
         name: 'CounterApp',
         
         components:{ 
-          HeaderSection
+          HeaderSection, 
+          FooterSection,
         },
         setup(){ 
         const {count, increment, decrement, reset, setValue } = useCounter();
@@ -51,6 +53,7 @@
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Mada:wght@500&display=swap');
   .counter-wrap{ 
     margin-top:2rem;
     position:relative;
@@ -70,11 +73,11 @@
     overflow:hidden;
   }
   .count-para{ 
-    font-size:20px; 
-    font-weight:400;
+    font-size:1.8rem; 
+    font-weight:500;
     text-align:center; 
     color:#110fb8;
-    font-family: 'montserrat', sans-serif ;
+    font-family: 'mada', sans-serif ;
     padding-bottom:25px;
 
   }
@@ -103,8 +106,16 @@
   .btn{
     padding:10px 15px;
     border-radius:8px;
-    box-shadow: 0px 0px 0px .1px rgba(0, 0, .4, .5);
+    box-shadow: 1px 0px 0px .1px rgba(0, 0, .4, .5);
     background:none;
     cursor:pointer;
+    font-weight:400;
+    font-family: 'mada', sans-serif;
+    transition:all .3s ease;
+}
+
+.btn:hover{ 
+  transform:scale(1.1);
+  font-weight:600;
 }
 </style>

@@ -4,9 +4,9 @@ import {useStore} from 'vuex'
 
 export default function useCounter(){ 
 
-    const store = useStore()
+        const store = useStore()
 
-    const count = computed(()=> store.state.count)
+        const count = computed(()=> store.state.count)
 
         const increment = ()=> { 
             store.commit('increment')

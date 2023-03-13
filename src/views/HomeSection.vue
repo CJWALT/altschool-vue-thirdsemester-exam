@@ -9,22 +9,22 @@
         </p>
         <router-link to="/counter" class="counter-link">Go to app</router-link>
     </div>
-    
-
 </div>
-
+<FooterSection/>
 </template> 
 
 
 <script> 
 
 import HeaderSection from '../components/HeaderSection.vue'
+import FooterSection from '../components/FooterSection.vue'
 
 export default { 
     name: 'HomeSection',
 
     components: { 
-        HeaderSection
+        HeaderSection, 
+        FooterSection,
     }
 
 }
@@ -61,6 +61,13 @@ export default {
         font-family:'poppins', sans-serif; 
         font-size:18px; 
         color:white;
+        transition:all .5s ease;
+    }
+
+    .counter-link:hover{ 
+        background:#10111f;
+        border-radius:0; 
+        
     }
 
     @media screen and (max-width:720px){ 

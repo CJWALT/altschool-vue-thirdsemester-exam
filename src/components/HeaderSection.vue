@@ -116,11 +116,13 @@ li .link-list{
     color:#1018bf
 }
 span.icon{ 
-    border:1px solid red; 
-    width:40px;
-    height:40px; 
-    background:blue; 
+    border:2px solid red; 
+    width:25px;
+    height:25px; 
+    border-radius:7px 0 7px 0;
+    background:#11090b; 
     cursor:pointer;
+    transition:.5s ease all;
 }
 
 
@@ -139,6 +141,7 @@ span.icon{
     height:400px; 
     padding:15px 30px; 
     background:#18b2f1; 
+    transition:.5s ease all;
 }
 
 .nav-list{ 
@@ -158,6 +161,9 @@ span.icon{
     border-bottom:2px solid #101f8b;
 }
 
+.icon-active{ 
+    transform:rotate(60deg)
+}
 
 /* @media screen and (max-width:720px){
     ul.nav{ 

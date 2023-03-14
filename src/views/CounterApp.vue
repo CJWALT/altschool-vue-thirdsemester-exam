@@ -54,6 +54,7 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Mada:wght@500&display=swap');
+  
   .counter-wrap{ 
     margin-top:2rem;
     position:relative;
@@ -61,7 +62,7 @@
     justify-content: center;
     overflow:hidden;
     padding:50px 0;
-    
+    height:72vh;
   }
   .count-container{
     border-radius:8px;

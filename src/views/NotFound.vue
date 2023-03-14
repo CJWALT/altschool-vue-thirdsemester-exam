@@ -2,15 +2,18 @@
     <HeaderSection/>
     <div class="container">
         <div class="nt-found-wrap">
-            <div class="not-found"> 
+            <div class="nt-found">
+                <div class="not-found"> 
                 <h1 class="nt-found-heading">404 page Not Found</h1>
                 <p class="nt-found-para">Sorry, the page you're looking for does not exist</p>
             </div>
             <div class="img-banner">
                 <img src= "@/assets/err.png" class="err-img" alt="error 404"/>
             </div>
-            
+                
         </div>
+            
+    </div>
     </div>
     <FooterSection/>
     
@@ -42,7 +45,13 @@
         align-self:center;
     }
     .nt-found-wrap{ 
-        margin-top:2rem;
+        
+        display:flex; 
+        height: 80vh;
+        margin:20px 0;
+    }
+    .nt-found{ 
+        
         display:flex;
         flex-direction: row;
         gap:5%;
@@ -65,16 +74,19 @@
         width:50%; 
         align-self:center;
     }
+    .err-img{ 
+        width:80%;
+    }
 
 
 
-    @media screen and (max-width:720px){ 
+    @media screen and (max-width:820px){ 
 
-        .nt-found-wrap{ 
+        .nt-found{ 
             flex-direction: column;
             gap:4rem;
         }
-        .nt-found-wrap > div{ 
+        .nt-found > div{ 
             width:auto;
         }
         .not-found{ 

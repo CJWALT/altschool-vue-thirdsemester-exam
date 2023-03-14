@@ -82,6 +82,9 @@
 
     @media screen and (max-width:820px){ 
 
+        .nt-found-wrap{ 
+            height:auto;    
+        }
         .nt-found{ 
             flex-direction: column;
             gap:4rem;
@@ -91,6 +94,9 @@
         }
         .not-found{ 
             order:2;
+        }
+        .nt-found-heading{
+            font-size:2.5rem;
         }
         .img-banner{ 
             order:1;

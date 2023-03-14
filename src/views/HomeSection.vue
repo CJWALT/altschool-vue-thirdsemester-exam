@@ -80,7 +80,7 @@ export default {
         
     }
 
-    @media screen and (max-width:720px){ 
+    @media screen and (max-width:820px){ 
 
 
         .welcome-wrap{ 

@@ -120,8 +120,12 @@
   font-weight:600;
 }
 
-@media screen and (max-width:720px){ 
+@media screen and (max-width:820px){ 
 
+  .counter-wrap{ 
+    height:auto; 
+    border:1px solid red;
+  }
   .count-container{ 
     padding:35px 15px;
   }

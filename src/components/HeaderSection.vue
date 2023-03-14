@@ -61,7 +61,7 @@ export default{
         },
         screenResize(){ 
             this.windowWidth = window.innerWidth;
-            if(this.windowWidth <= 750){ 
+            if(this.windowWidth <= 820){ 
                 this.mobile = true;
                 return; 
             }

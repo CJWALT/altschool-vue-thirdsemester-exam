@@ -124,7 +124,7 @@
 
   .counter-wrap{ 
     height:auto; 
-    border:1px solid red;
+    
   }
   .count-container{ 
     padding:35px 15px;

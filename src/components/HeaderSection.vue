@@ -19,7 +19,7 @@
             <span @click="toggleMobileNav" :class="{'icon-active' : mobileNav}" v-show='mobile' class="icon"></span>
         
 
-            <transition name="mobile-nav"> 
+            <transition name="trans-nav"> 
 
                 <ul  v-show="mobileNav" class="show-nav">
                     <li class="nav-list"><router-link to="/" class="link-list">Home</router-link></li>
@@ -165,6 +165,18 @@ span.icon{
     transform:rotate(60deg)
 }
 
+.trans-nav-enter-active, 
+ .trans-nav-leave-active{ 
+    transition:.7s ease all;
+}
+
+ .trans-nav-enter-from,
+ .trans-nav-leave-to{ 
+    transform: translateY(-254px)
+}
+.trans-nav-enter-to{ 
+    transform: translateY(10px)
+}
 /* @media screen and (max-width:720px){
     ul.nav{ 
         display:none;
